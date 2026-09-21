@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "index": "01",
+      "title": "Frontend",
+      "items": ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+    },
+    {
+      "index": "02",
+      "title": "Backend",
+      "items": ["PHP", "MySQL"]
+    },
+    {
+      "index": "03",
+      "title": "CMS",
+      "items": ["WordPress", "Elementor"]
+    },
+    {
+      "index": "04",
+      "title": "Design",
+      "items": ["Figma", "UI/UX Design", "Graphic Design"]
+    },
+    {
+      "index": "05",
+      "title": "Tools",
+      "items": ["Git", "GitHub", "VS Code", "XAMPP"]
+    },
+    {
+      "index": "06",
+      "title": "Professional",
+      "items": [
+        "Responsive Design",
+        "Database Design",
+        "Problem Solving",
+        "Team Collaboration",
+        "Version Control"
+      ]
+    }
+  ]
+}
