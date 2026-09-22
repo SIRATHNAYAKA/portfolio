@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Sachin Rathnayaka</title>
+<meta name="description" content="Selected projects by Sachin Rathnayaka — full stack web applications, WordPress sites and UI/UX work.">
+<link rel="canonical" href="https://sirathnayaka.github.io/premium-portfolio/projects.html">
+<meta name="theme-color" content="#050816">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<script src="assets/js/theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body data-page="projects">
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div id="site-header"></div>
+
+<main id="main" style="padding-top:calc(var(--header-h) + 3rem)">
+
+  <section class="section">
+    <div class="container">
+      <header class="section__head">
+        <p class="section__index" data-reveal="up">Selected Work</p>
+        <h1 class="section__title" data-reveal="up" data-delay="1">
+          Projects built to<br><em>actually work.</em>
+        </h1>
+        <p class="section__lead" data-reveal="up" data-delay="2">
+          A selection of full stack applications, web projects and design work. Each one
+          includes a full case study — problem, solution, features and my contribution.
+        </p>
+      </header>
+
+      <div class="filters" role="tablist" aria-label="Filter projects by category" data-reveal="up">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="full-stack" role="tab" aria-selected="false">Full Stack</button>
+        <button class="filter" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+        <button class="filter" data-filter="uiux" role="tab" aria-selected="false">UI/UX</button>
+        <button class="filter" data-filter="wordpress" role="tab" aria-selected="false">WordPress</button>
+        <button class="filter" data-filter="academic" role="tab" aria-selected="false">Academic</button>
+        <button class="filter" data-filter="other" role="tab" aria-selected="false">Other</button>
+      </div>
+
+      <div class="projects" id="projectGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+<button class="to-top" id="toTop" aria-label="Back to top"><span data-icon="arrow-up"></span></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data/projects.js"></script>          <!-- ← Data FIRST -->
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/animations.js" defer></script>
+<script src="assets/js/filters.js" defer></script>
+<script src="assets/js/projects.js" defer></script>
+</body>
+</html>

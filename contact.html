@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Sachin Rathnayaka</title>
+<meta name="description" content="Get in touch with Sachin Rathnayaka — Full Stack Developer and UI/UX Designer.">
+<meta name="theme-color" content="#050816">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<script src="assets/js/theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body data-page="contact">
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div id="site-header"></div>
+
+<main id="main" style="padding-top:calc(var(--header-h) + 3rem)">
+
+  <section class="section">
+    <div class="container">
+      <header class="section__head">
+        <p class="section__index" data-reveal="up">Contact</p>
+        <h1 class="section__title" data-reveal="up" data-delay="1">
+          Have a project<br><em>in mind?</em>
+        </h1>
+        <p class="section__lead" data-reveal="up" data-delay="2">
+          Let's turn your idea into a clean, useful and memorable digital experience.
+        </p>
+      </header>
+
+      <div class="contact__grid">
+        <form class="form" id="contactForm" novalidate data-reveal="up">
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+              <span class="field__error" data-error-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+              <span class="field__error" data-error-for="email"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project enquiry" required>
+            <span class="field__error" data-error-for="subject"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+            <span class="field__error" data-error-for="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full magnetic">
+            Send Message <span data-icon="send"></span>
+          </button>
+          <p class="form__note">
+            Static site — form uses Formspree or your email client. No data stored here.
+          </p>
+        </form>
+
+        <aside class="contact__info" data-reveal="fade-left" data-delay="2">
+          <div class="contact-card">
+            <p class="contact-card__label">Email</p>
+            <div class="contact-card__row">
+              <a href="mailto:[REPLACE WITH YOUR EMAIL]">[REPLACE WITH YOUR EMAIL]</a>
+              <button class="icon-btn" id="copyEmail" data-copy="[REPLACE WITH YOUR EMAIL]" aria-label="Copy email">
+                <span data-icon="copy"></span>
+              </button>
+            </div>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card__label">GitHub</p>
+            <a href="https://github.com/SIRATHNAYAKA" target="_blank" rel="noopener">github.com/SIRATHNAYAKA</a>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card__label">LinkedIn</p>
+            <a href="[REPLACE WITH YOUR LINKEDIN URL]" target="_blank" rel="noopener">[REPLACE WITH YOUR LINKEDIN URL]</a>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card__label">Location</p>
+            <p>Tangalle, Sri Lanka</p>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card__label">CV</p>
+            <a href="assets/downloads/Sachin-Rathnayaka-CV.pdf" download>Download PDF <span data-icon="download"></span></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+<button class="to-top" id="toTop" aria-label="Back to top"><span data-icon="arrow-up"></span></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/animations.js" defer></script>
+<script src="assets/js/contact.js" defer></script>
+</body>
+</html>
